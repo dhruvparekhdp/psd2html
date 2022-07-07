@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Dex Online</title>
+
+  <!-- Bootstrap -->
+
+  <script src="https://kit.fontawesome.com/fe4068ba70.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="dexonlinestyles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      
+
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row header">
+
+      <div class="col-lg-12 container-zero">
+        <nav class="navbar navbar-custom navbar-light navbar-expand-lg fixed-top">
+          <a class="navbar-brand" href="#"><img src="image/nse_dex.jpg" width="274" height="59" alt=""
+              style="margin-top: -15px; z-index: -100" /></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse justify-content-end navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li clas="navbar-item">
+                <a href="#" class="nav-link">ABOUT US</a>
+              </li>
+              <li clas="navbar-item">
+                <a href="#" class="nav-link">SERVICES</a>
+              </li>
+              <li clas="navbar-item">
+                <a href="#" class="nav-link">HELPDESK</a>
+              </li>
+              <li clas="navbar-item">
+                <button type="button" class="btn custom-btn-warning">LOGIN</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row content">
+      <div class="col-lg-4">
+        <form class="Squarewt">
+          <div class="form-group">
+            <input type="text" class="custom-input-field" id="nameInput" placeholder="Enter Name">
+          </div>
+          <div class="form-group contact-number-container">
+            <input type="tel" name="usrtel" class="contact-number-input">
+            <a class="contact-number-button">Verify</a>
+          </div>
+          <div class="form-group otp-container">
+            <input class="otp-input" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1>
+            <input class="otp-input" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1>
+            <input class="otp-input" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1>
+            <input class="otp-input" type="text" oninput='digitValidate(this)' onkeyup='tabChange(4)' maxlength=1>
+            <span class="icon-container">
+              <i class="fa fa-undo"></i> &nbsp; Resend
+            </span>
+            <br>
+            <span class="form-help-text">
+              Attempt 2 of 3
+            </span>
+          </div>
+          <div class="form-group">
+            <input type="email" class="custom-input-field" id="exampleInputEmail1" placeholder="Email">
+            <span class="form-help-text">
+              Email ID will be verified
+            </span>
+          </div>
+          <button type="submit" style="width: 100%;" class="btn custom-btn-warning">REGISTER NOW</button>
+        </form>
+      </div>
+      <div class="col-lg-8 poster">
+        <div class="title">Job Seeker Network</div>
+        <div class="title_text">Register to get updates on most exciting job roles based on your interest and Expertise
+          and Get Your dream Job Today</div>
+      </div>
+    </div>
+    <div class="row helpdesk">
+      <div class="col-lg-6 helpdesk-container">
+        <div class="col-lg-3 custom-count-box helpdesk-text-container">
+          <span class="helpdesk-highlight-text">150<sup>+</sup>
+          </span>
+          <span class="helpdesk-text">
+            Job Opening
+          </span>
+        </div>
+        <div class="col-lg-3 custom-count-box helpdesk-text-container">
+          <span class="helpdesk-highlight-text">350<sup>+</sup>
+          </span>
+          <span class="helpdesk-text">
+            Placement
+          </span>
+        </div>
+        <div class="col-lg-3 custom-count-box helpdesk-text-container">
+          <span class="helpdesk-highlight-text">1500<sup>+</sup>
+          </span>
+          <span class="helpdesk-text">
+            Resumes
+          </span>
+        </div>
+      </div>
+
+      <div class="col-lg-6 newsletter-container">
+        <p class="invite-friend-p">
+          <img src="image/invite_user.png" width="40" height="33" alt="" />
+          <span class="invite-friend-text"> Invite Friends<span>
+          </p>
+          <span class="p-input-icon-right">
+            <input type="text" pinputtext="" placeholder="Enter your Email ID"
+            class="p-inputtext p-component p-element">
+            <i class="fa fa-paper-plane"></i>
+          </span>
+          
+        <!-- <div class="invite-friend-container"> -->
+          <!-- <div class="email-box">
+            <input type="text" />
+            <button type="button"><i class="fa fa-paper-plane-o"></i></button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 container-zero codebar"><img src="image/footer-strip.png" width="100%" height="10" alt="" />
+      </div>
+    </div>
+    <div class="row footer">
+      <div class="col-lg-8 col-xs-6">
+        <h5 style="color:#6C6C6C;">© Copyright 2022 NSEIT Ltd. All Right Reserved</h5>
+      </div>
+      <div class="col-lg-4 col-xs-6">
+        <ul class="social-network social-circle">
+          <li><a href="#" class="icoYt" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    let digitValidate = function (ele) {
+      console.log(ele.value);
+      ele.value = ele.value.replace(/[^0-9]/g, '');
+    }
+
+    let tabChange = function (val) {
+      let ele = document.getElementsByClassName('otp-input');
+      if (ele[val - 1].value != '') {
+        ele[val].focus()
+      } else if (ele[val - 1].value == '') {
+        ele[val - 2].focus()
+      }
+    }
+
+  </script>
+</body>
+
+</html>
