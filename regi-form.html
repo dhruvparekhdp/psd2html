@@ -1,68 +1,60 @@
-<!-- <div class="m-4">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-                <img src="/examples/images/logo.svg" height="28" alt="CoolBrand">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">Profile</a>
-                    <a href="#" class="nav-item nav-link">Messages</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
-                </div>
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link">Login</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
- -->
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dex Online</title>
     <link rel="stylesheet" href="dexonlinestyles.css">
+    <link rel="stylesheet" href="dexonlineform.css">
+    <link rel="stylesheet" href="main.css">
 
-    <script src="https://kit.fontawesome.com/fe4068ba70.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="dexonlinestyles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-  crossorigin="anonymous"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="vendor/font-awesome@6.1.1/all.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome@6.1.1/all.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap@5.1.3/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker@1.8.0/bootstrap-datepicker.css">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    
+    <script src="vendor/jquery/3.2.1/jquery.min.js"></script>
+    <script src="vendor/bootstrap@5.1.3/bootstrap.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/bootstrap-datepicker@1.8.0/bootstrap-datepicker.min.js"></script>
+    <script src="dexonlineform.js"></script>
 </head>
 
 
 
 <body>
     <!-- MultiStep Form -->
-    <div class="container-fluid content">
-        <div class="row justify-content-center mt-0">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light header l-12">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="image/nse_dex.jpg" width="274" height="59" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+                    <div class="d-flex">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">EDIT DETAILS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LOGOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row content-after-login justify-content-center mt-0">
             <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
                 <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                     <div class="row">
@@ -76,543 +68,846 @@
                                     <li id="additional"><strong>Additional</strong></li>
                                     <li id="resume"><strong>Resume</strong></li>
                                 </ul>
-                                <!-- fieldsets -->
+                                <!-- Personal Details fields -->
                                 <fieldset>
                                     <div class="form-card">
-                                        <h2 class="fs-title">Personal Information</h2>
+                                        <label class="label mandatory-field">Applicant's Name</label>
                                         <input type="text" placeholder="Name" disabled />
+                                        <label class="label mandatory-field">Email id</label>
                                         <input type="email" placeholder="Email Id" disabled />
+                                        <label class="label mandatory-field">Mobile No</label>
                                         <input type="tel" placeholder="Mobile  No" disabled>
+                                        <label class="label mandatory-field">Date of Birth</label>
                                         <input type="date" id="dob" />
-                                        <input type="radio" name="gender" value="male"> Male<br>
-                                        <input type="radio" name="gender" value="female"> Female<br>
-                                        <select id="select_nationality" name="nationality" style="width:200px;"
-                                            class="operator">
-                                            <option value="">Select a Nationality</option>
-                                            <option value="India">India</option>
-                                            <option value="Nepal">Nepal</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <div class="input-group">
+                                            <label class="label mandatory-field">Gender</label>
+                                            <div class="m-l-10">
+                                                <label class="radio-container m-r-45">Male
+                                                    <input type="radio" name="gender">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="radio-container">Female
+                                                    <input type="radio" name="gender">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <label class="label mandatory-field">Nationality</label>
+                                        <div class="rs-select2 js-select-simple">
+                                            <select id="select_nationality" name="nationality">
+                                                <option disabled="disabled" selected="selected" value="">Select a
+                                                    Nationality</option>
+                                                <option value="India">India</option>
+                                                <option value="Nepal">Nepal</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
                                         <input id="other-nationality" type="text" maxlength="40"
+                                            placeholder="Enter Other Nationality"
                                             onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <div class="next-prev-container" style="max-width: 30%;">
+                                                <button type="button" 
+                                                    class="btn custom-btn-warning custom-form-action-btn next">Next</button>
+                                            </div>
                                     </div>
-                                    <input type="button" name="next" class="next action-button" value="Next Step" />
                                 </fieldset>
+
+                                <!-- Contact Details fields -->
+
                                 <fieldset>
                                     <div class="form-card">
-                                        <h2 class="fs-title">Contact Information</h2>
+                                        <label class="label mandatory-field">Address Line 1</label>
                                         <input maxlength="75" type="text" placeholder="Permanent Address Line 1"
                                             onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9,&.,;-]/, '')" />
+                                        <label class="label">Address Line 2</label>
                                         <input maxlength="75" type="text" placeholder="Permanent Address Line 2"
                                             onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9,&.,;-]/, '')" />
-                                        <select id="select_stateut" name="stateut" style="width:200px;"
-                                            class="operator">
-                                            <option value="">Select a State/ Unioun Teritory</option>
-                                            <option value="Delhi">Delhi</option>
-                                            <option value="Maharashtra">Maharashtra</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <label class="label mandatory-field">State/ Unioun Teritory</label>
+                                        <div class="rs-select2 js-select-simple">
+                                            <select id="select_stateut" name="stateut">
+                                                <option disabled="disabled" selected="selected" value="">Select a State/
+                                                    Unioun Teritory</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
                                         <input id="other-stateut" type="text" maxlength="40"
                                             onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
-                                        <select id="select_district" name="district" style="width:200px;"
-                                            class="operator">
-                                            <option value="">Select a State/ Unioun Teritory</option>
-                                            <option value="India">India</option>
-                                            <option value="Nepal">Nepal</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <label class="label mandatory-field">District</label>
+                                        <div class="rs-select2 js-select-simple">
+                                            <select id="select_district" name="district">
+                                                <option disabled="disabled" selected="selected" value="">Select District
+                                                </option>
+                                                <option value="Thane">Thane</option>
+                                                <option value="Mumbai">Mumbai</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
                                         <input id="other-district" type="text" maxlength="40"
                                             onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                        <label class="label mandatory-field">City / Village / Town</label>
                                         <input maxlength="40" minlength="3" type="text"
                                             placeholder="City / Village / Town"
                                             onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9,&.,;-]/, '')" />
+                                        <label class="label mandatory-field">Pincode</label>
                                         <input maxlength="6" type="text" placeholder="PinCode"
                                             onkeyup="this.value = this.value.replace(/[^0-9]/, '')" />
+                                        <label class="label mandatory-field">Alternate Contact Number</label>
                                         <input maxlength="10" type="text" placeholder="Alternate Contact Number"
                                             onkeyup="this.value = this.value.replace(/[^0-9]/, '')" />
 
+                                            <div class="next-prev-container">
+                                                <button type="button" 
+                                                    class="btn custom-btn-warning custom-form-action-btn previous">Previous</button>
+                                                <button type="button" 
+                                                    class="btn custom-btn-warning custom-form-action-btn next">Next</button>
+                                            </div>
                                     </div>
-                                    <input type="button" name="previous" class="previous action-button-previous"
-                                        value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next Step" />
+
                                 </fieldset>
+
+                                <!-- Education Details fields -->
+
                                 <fieldset>
                                     <div class="form-card">
                                         <h2 class="fs-title">Education Information</h2>
+                                        <div class="rs-select2 js-select-simple">
+                                            <select id="select_eduinfo" name="eduinfo">
+                                                <option disabled="disabled" selected="selected" value="">Select Course
+                                                </option>
+                                                <option value="ssc">SSC(10th or equivalent)</option>
+                                                <option value="hsc">HSC(10+2 or equivalent)</option>
+                                                <option value="diploma">Diploma</option>
+                                                <option value="grad">Graduation</option>
+                                                <option value="postgrad">Post-Graduation</option>
+                                                <option value="postgraddiploma">Post Graduate Diploma</option>
+                                                <option value="profdegree">Professional Degree</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
 
+                                        </div>
+                                        <div id="ssc">
+                                            <br>
+                                            <h4 class="primary-color">Selected: SSC Certificate</h4>
+                                            <hr>
+                                            <label class="label mandatory-field">Name of School</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">Board</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_ssc" name="ssc">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        Board
+                                                    </option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-ssc" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Year of Passing</label>
+                                            <input maxlength="4" type="text" placeholder="Year of Passing"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]/, '')" />
+                                            <div class="input-group">
+                                                <div class="m-l-10">
+                                                    <label class="radio-container m-r-45">Percentage
+                                                        <input type="radio" onchange="showElem('showsscmarkinput')"
+                                                            name="sscradio">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">CGPA
+                                                        <input type="radio" onchange="showElem('showsscmarkinput')"
+                                                            name="sscradio">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input maxlength="4" type="text" id="showsscmarkinput"
+                                                onblur="roundNumber()"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]./, '');" />
+                                            <br>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="button" style="border-radius: 10px;"
+                                                    class="btn custom-btn-warning">Save</button>
+                                            </div>
+                                        </div>
+
+                                        <div id="hsc">
+                                            <br>
+                                            <h4 class="primary-color">Selected: HSC Certificate</h4>
+                                            <hr>
+                                            <label class="label mandatory-field">Name of College</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">Board</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_ssc" name="ssc">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        Board
+                                                    </option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <label class="label mandatory-field">Specialization</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_hsc" name="hsc">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        Specialization
+                                                    </option>
+                                                    <option value="Arts">Arts</option>
+                                                    <option value="Commerce">Commerce</option>
+                                                    <option value="Science">Science</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-hsc" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Year of Passing</label>
+                                            <input maxlength="4" type="text" placeholder="Year of Passing"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]/, '')" />
+                                            <div class="input-group">
+                                                <div class="m-l-10">
+                                                    <label class="radio-container m-r-45">Percentage
+                                                        <input type="radio" onchange="showElem('showhscmarkinput')"
+                                                            name="hscradio">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">CGPA
+                                                        <input type="radio" onchange="showElem('showhscmarkinput')"
+                                                            name="hscradio">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input maxlength="4" type="text" id="showhscmarkinput"
+                                                onblur="roundNumber()"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]./, '');" />
+                                            <br>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="button" style="border-radius: 10px;"
+                                                    class="btn custom-btn-warning">Save</button>
+                                            </div>
+                                        </div>
+                                        <div id="diploma">
+                                            <br>
+                                            <h4 class="primary-color">Selected: Diploma Certificate</h4>
+                                            <hr>
+                                            <label class="label mandatory-field">Name of College</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">University Name</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_diploma" name="diploma">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        University Name
+                                                    </option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-diploma" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Specialization</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Year of Passing</label>
+                                            <input maxlength="4" type="text" placeholder="Year of Passing"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]/, '')" />
+                                            <div class="input-group">
+                                                <div class="m-l-10">
+                                                    <label class="radio-container m-r-45">Percentage
+                                                        <input type="radio" onchange="showElem('showdiplomamarkinput')"
+                                                            name="diplomaradio">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">CGPA
+                                                        <input type="radio" onchange="showElem('showdiplomamarkinput')"
+                                                            name="diplomaradio">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input maxlength="4" type="text" id="showdiplomamarkinput"
+                                                onblur="roundNumber()"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]/, '');" />
+                                            <br>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="button" style="border-radius: 10px;"
+                                                    class="btn custom-btn-warning">Save</button>
+                                            </div>
+
+                                        </div>
+                                        <div id="grad">
+                                            <br>
+                                            <h4 class="primary-color">Selected: Graduation Certificate</h4>
+                                            <hr>
+
+                                            <label class="label mandatory-field">Name of College</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">University Name</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_grad" name="grad">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        University Name
+                                                    </option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-grad" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Degree</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_graddegree" name="graddegree">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        Degree
+                                                    </option>
+                                                    <option value="BA/BBA/BFA – Arts/Applied Arts/Fine Arts">BA/BBA/BFA
+                                                        – Arts/Applied Arts/Fine Arts</option>
+                                                    <option value="B. Com - Commerce">B. Com - Commerce</option>
+                                                    <option value="BCA/Bsc.IT/BCS/ - Computers/IT">BCA/Bsc.IT/BCS/ -
+                                                        Computers/IT</option>
+                                                    <option value="BBA/BBM- Management">BBA/BBM- Management</option>
+                                                    <option value="B.E/B.Tech – Engineering Technology">B.E/B.Tech –
+                                                        Engineering Technology</option>
+                                                    <option value="B.Sc./B.Hsc - Science/ Home Science">B.Sc./B.Hsc -
+                                                        Science/ Home Science</option>
+                                                    <option value="LLB- Law">LLB- Law</option>
+                                                    <option value="B.Ed- Education">B.Ed- Education</option>
+                                                    <option value="BHM/BHTM- Hotel Management">BHM/BHTM- Hotel
+                                                        Management</option>
+                                                    <option value="B.Pharm – Pharmacy">B.Pharm – Pharmacy</option>
+                                                    <option value="B.Arch – Architecture">B.Arch – Architecture</option>
+                                                    <option value="BMM - Journalism">BMM - Journalism</option>
+                                                    <option value="Other">Other Graduation Equivalent Degree</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-graddegree" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Specialization</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Year of Passing</label>
+                                            <input maxlength="4" type="text" placeholder="Year of Passing"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]/, '')" />
+
+                                            <div class="input-group">
+                                                <label class="label mandatory-field">Results Awaited</label>
+                                                <div class="m-l-10">
+                                                    <label class="radio-container m-r-45">Yes
+                                                        <input type="radio" name="Yes">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">No
+                                                        <input type="radio" name="No"
+                                                            onchange="showElem('showgradpercsec')">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div id="showgradpercsec">
+                                                <div class="input-group">
+                                                    <div class="m-l-10">
+                                                        <label class="radio-container m-r-45">Percentage
+                                                            <input type="radio" onchange="showElem('showgradmarkinput')"
+                                                                name="gradradio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="radio-container">CGPA
+                                                            <input type="radio" onchange="showElem('showgradmarkinput')"
+                                                                name="gradradio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <input maxlength="4" type="text" id="showgradmarkinput"
+                                                    onblur="roundNumber()"
+                                                    onkeyup="this.value = this.value.replace(/[^0-9]/, '');" />
+                                                </div>
+                                                <br>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" style="border-radius: 10px;"
+                                                        class="btn custom-btn-warning">Save</button>
+                                                </div>
+
+                                        </div>
+
+                                        <div id="postgrad">
+                                            <br>
+                                            <h4 class="primary-color">Selected: Post-Graduation Certificate</h4>
+                                            <hr>
+
+                                            <label class="label mandatory-field">Name of College</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">University Name</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_postgrad" name="postgrad">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        University Name
+                                                    </option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-postgrad" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">Degree</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_postgraddegree" name="postgraddegree">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        Degree
+                                                    </option>
+                                                    <option value="MA/MAA/MFA – Arts/Fine Arts/Applied Arts">MA/MAA/MFA
+                                                        – Arts/Fine Arts/Applied Arts</option>
+                                                    <option value="M. Com - Commerce">M. Com - Commerce</option>
+                                                    <option value="MCA/Msc IT – Computer Applications/IT">MCA/Msc IT –
+                                                        Computer Applications/IT</option>
+                                                    <option value="MBC/MMC/PGDMC – Mass Communication">MBC/MMC/PGDMC –
+                                                        Mass Communication</option>
+                                                    <option value="M.E./ M.Tech – Engineering Technology">M.E./ M.Tech –
+                                                        Engineering Technology</option>
+                                                    <option value="MHM/MHTM – Hotel/ Hospitality/ Travel Management">
+                                                        MHM/MHTM – Hotel/ Hospitality/ Travel Management</option>
+                                                    <option value="M.Sc./M.Hsc – Science/Home Science">M.Sc./M.Hsc –
+                                                        Science/Home Science</option>
+                                                    <option value="LLM – Law">LLM – Law</option>
+                                                    <option value="M Phil">M Phil</option>
+                                                    <option value="M. Arch – Architecture">M. Arch – Architecture
+                                                    </option>
+                                                    <option value="MBA/PGDM/PGDBM/MMS - Management">MBA/PGDM/PGDBM/MMS -
+                                                        Management</option>
+                                                    <option value="MBBS – Medicine and Surgery">MBBS – Medicine and
+                                                        Surgery</option>
+                                                    <option value="MD/MS – Medicine and Surgery">MD/MS – Medicine and
+                                                        Surgery</option>
+                                                    <option value="M Pharm - Pharmacy">M Pharm - Pharmacy</option>
+                                                    <option value="Other">Other Post-Graduation</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-postgraddegree" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Specialization</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+
+                                            <label class="label mandatory-field">Year of Passing</label>
+                                            <input maxlength="4" type="text" placeholder="Year of Passing"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]/, '')" />
+                                            <div class="input-group">
+                                                <label class="label mandatory-field">Results Awaited</label>
+                                                <div class="m-l-10">
+                                                    <label class="radio-container m-r-45">Yes
+                                                        <input type="radio" name="Yes">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">No
+                                                        <input type="radio" name="No"
+                                                            onchange="showElem('showpostgradpercsec')">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div id="showpostgradpercsec">
+                                                <div class="input-group">
+                                                    <div class="m-l-10">
+                                                        <label class="radio-container m-r-45">Percentage
+                                                            <input type="radio"
+                                                                onchange="showElem('showpostgradmarkinput')"
+                                                                name="postgradradio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="radio-container">CGPA
+                                                            <input type="radio"
+                                                                onchange="showElem('showpostgradmarkinput')"
+                                                                name="postgradradio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <input maxlength="4" type="text" id="showpostgradmarkinput"
+                                                    onblur="roundNumber()"
+                                                    onkeyup="this.value = this.value.replace(/[^0-9]/, '');" />
+                                            </div>
+                                            <br>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="button" style="border-radius: 10px;"
+                                                    class="btn custom-btn-warning">Save</button>
+                                            </div>
+                                        </div>
+                                        <div id="postgraddiploma">
+                                            <br>
+                                            <h4 class="primary-color">Selected: Post Graduate Diploma Certificate</h4>
+                                            <hr>
+                                            <label class="label mandatory-field">Name of College</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">University Name</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_postgraddiploma" name="postgraddiploma">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        University Name
+                                                    </option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-postgraddiploma" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">Specialization</label>
+                                            <input type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <label class="label mandatory-field">Year of Passing</label>
+                                            <input maxlength="4" type="text" placeholder="Year of Passing"
+                                                onkeyup="this.value = this.value.replace(/[^0-9]/, '')" />
+
+                                            <div class="input-group">
+                                                <label class="label mandatory-field">Results Awaited</label>
+                                                <div class="m-l-10">
+                                                    <label class="radio-container m-r-45">Yes
+                                                        <input type="radio" name="Yes">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-container">No
+                                                        <input type="radio" name="No"
+                                                            onchange="showElem('showpostgraddiplomapercsec')">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div id="showpostgraddiplomapercsec">
+                                                <div class="input-group">
+                                                    <div class="m-l-10">
+                                                        <label class="radio-container m-r-45">Percentage
+                                                            <input type="radio"
+                                                                onchange="showElem('showpostgraddiplomamarkinput')"
+                                                                name="postgraddiplomaradio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="radio-container">CGPA
+                                                            <input type="radio"
+                                                                onchange="showElem('showpostgraddiplomamarkinput')"
+                                                                name="postgraddiplomaradio">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <input maxlength="4" type="text" id="showpostgraddiplomamarkinput"
+                                                    onblur="roundNumber()"
+                                                    onkeyup="this.value = this.value.replace(/[^0-9]/, '');" />
+                                            </div>
+                                            <br>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="button" style="border-radius: 10px;"
+                                                    class="btn custom-btn-warning">Save</button>
+                                            </div>
+                                        </div>
+                                        <div id="profdegree">
+                                            <br>
+                                            <h4 class="primary-color">Selected: Professional Degree Certificate</h4>
+                                            <hr>
+                                            <label class="label">Degree</label>
+                                            <div class="rs-select2 js-select-simple">
+                                                <select id="select_profdegreedegree" name="profdegreedegree">
+                                                    <option disabled="disabled" selected="selected" value="">Select
+                                                        Degree
+                                                    </option>
+
+                                                    <option value="CA – Chartered Accountant">CA – Chartered Accountant
+                                                    </option>
+                                                    <option value="CS – Company Secretary">CS – Company Secretary
+                                                    </option>
+                                                    <option value="ICWA – Cost & Works Accountant">ICWA – Cost & Works
+                                                        Accountant</option>
+                                                    <option value="Chartered Financial Analyst (CFA)">Chartered
+                                                        Financial Analyst (CFA)</option>
+                                                    <option value="Certified Financial Planner (CFP)">Certified
+                                                        Financial Planner (CFP)</option>
+                                                    <option value="Certified Professional Accountant (CPA)">Certified
+                                                        Professional Accountant (CPA)</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <input id="other-profdegreedegree" type="text" maxlength="40"
+                                                onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
+                                            <br>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="button" style="border-radius: 10px;"
+                                                    class="btn custom-btn-warning">Save</button>
+                                            </div>
+                                        </div>
+                                        <div class="next-prev-container">
+                                            <button type="button" 
+                                                class="btn custom-btn-warning custom-form-action-btn previous">Previous</button>
+                                            <button type="button" 
+                                                class="btn custom-btn-warning custom-form-action-btn next">Next</button>
+                                        </div>
                                     </div>
-                                    <input type="button" name="previous" class="previous action-button-previous"
-                                        value="Previous" />
-                                    <!-- <input type="button" name="make_payment" class="next action-button" value="Confirm"/> -->
-                                    <input type="button" name="next" class="next action-button" value="Next Step" />
 
                                 </fieldset>
+
+                                <!-- Additional Details fields -->
+
                                 <fieldset>
                                     <div class="form-card">
-                                        <h2 class="fs-title">Additional Information</h2>
-                                        <input type="text" name="fname" placeholder="First Name" />
-                                        <select id="select_areaofinterest" name="areaofinterest" style="width:200px;"
-                                            class="operator">
-                                            <option value="">Select Area of Interest</option>
-
-                                            <option value="Programming">Programming</option>
-                                            <option value="Cloud Computing - DevOps">Cloud Computing - DevOps</option>
-                                            <option value="Cloud Computing - SysOps">Cloud Computing - SysOps</option>
-                                            <option value="Networking">Networking</option>
-                                            <option value="Ethical Hacking">Ethical Hacking</option>
-                                            <option value="Database Administrator">Database Administrator</option>
-                                            <option value="Retail Banking">Retail Banking</option>
-                                            <option value="Investment Banking">Investment Banking</option>
-                                            <option value="Data Visualization">Data Visualization</option>
-                                            <option value="Data Analytics">Data Analytics</option>
-                                            <option value="Insurance Capital Markets">Insurance Capital Markets</option>
-                                            <option value="Fintech">Fintech</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <label class="label">Professional Certificate</label>
+                                        <input type="text" placeholder="Professional Certificate" />
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" style="border-radius: 10px;"
+                                                class="btn custom-btn-warning">Add +</button>
+                                        </div>
+                                        <label class="label">Area of Interest</label>
+                                        <div class="rs-select2 js-select-simple">
+                                            <select id="select_areaofinterest" name="areaofinterest">
+                                                <option disabled="disabled" selected="selected" value="">Select Area of
+                                                    Interest</option>
+                                                <option value="Programming">Programming</option>
+                                                <option value="Cloud Computing - DevOps">Cloud Computing - DevOps
+                                                </option>
+                                                <option value="Cloud Computing - SysOps">Cloud Computing - SysOps
+                                                </option>
+                                                <option value="Networking">Networking</option>
+                                                <option value="Ethical Hacking">Ethical Hacking</option>
+                                                <option value="Database Administrator">Database Administrator</option>
+                                                <option value="Retail Banking">Retail Banking</option>
+                                                <option value="Investment Banking">Investment Banking</option>
+                                                <option value="Data Visualization">Data Visualization</option>
+                                                <option value="Data Analytics">Data Analytics</option>
+                                                <option value="Insurance Capital Markets">Insurance Capital Markets
+                                                </option>
+                                                <option value="Fintech">Fintech</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
                                         <input id="other-areaofinterest" type="text" maxlength="40"
                                             onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9.,_-]/, '')" />
-                                    </div>
-                                    <input type="button" name="previous" class="previous action-button-previous"
-                                        value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next Step" />
-                                </fieldset>
-                                <fieldset>
-                                    <form>
 
-                                        <div class="form-card">
-                                            <label for="exampleInputEmail1">Upload</label>
-                                            <input type="file" id="myFile" class="upload-resume" name="filename">
-                                            <div class="form-group contact-number-container">
-                                                <a class="contact-number-button">Verify</a>
+                                        <div class="input-group">
+                                            <label class="label mandatory-field">Do you have any outstanding
+                                                backlogs</label>
+                                            <div class="m-l-10">
+                                                <label class="radio-container m-r-45">Yes
+                                                    <input type="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="radio-container">No
+                                                    <input type="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
                                             </div>
-                                            <input type="checkbox" name="I agree to the Terms">
-                                            I agree to the Terms
-                                            <br>
-                                            <button type="button" class="btn custom-btn-warning">Submit</button>
                                         </div>
-                                    </form>
-
-
-                                    <!-- <input type="button" name="next" class="next action-button" value="Next Step"/> -->
+                                        <div class="next-prev-container">
+                                            <button type="button" 
+                                                class="btn custom-btn-warning custom-form-action-btn previous">Previous</button>
+                                            <button type="button" 
+                                                class="btn custom-btn-warning custom-form-action-btn next">Next</button>
+                                        </div>
+                                    </div>
                                 </fieldset>
 
+                                <!-- Resume Details fields -->
+                                <fieldset>
+                                    <div class="form-card">
+                                        <label class="label mandatory-field">Photo Upload</label>
+                                        <input type="file" id="avatar" class="upload-resume" name="avatar"
+                                            accept="image/jpg, image/jpeg" onchange='getImg(event)'>
+                                        <label class="label mandatory-field">Upload</label>
+                                        <input type="file" id="myFile" class="upload-resume" name="filename">
+                                        <div class="form-group contact-number-container border-0">
+                                            <a class="contact-number-button" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Preview</a>
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="m-l-10">
+                                                <label class="radio-container m-r-45">I agree to the Terms
+                                                    <input type="checkbox" name="I agree to the Terms">
+                                                    <span class="checkmark checkbox-mark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="next-prev-container">
+                                            <button type="button" 
+                                                class="btn custom-btn-warning custom-form-action-btn previous">Previous</button>
+                                            <button type="button" 
+                                                class="btn custom-btn-warning custom-form-action-btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog-scrollable modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Preview</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start" id="msform">
+                        <div class="form-card form-card-summary">
+                            <h5 class="fs-title-summary">Education Information</h5>
+                            <hr>
+                            <label class="label-summary">Applicant's Name</label>
+                            <input type="text" value="Name" disabled />
+                            <label class="label-summary">Email id</label>
+                            <input type="email" value="Email Id" disabled />
+                            <label class="label-summary">Mobile No</label>
+                            <input type="tel" value="Mobile  No" disabled>
+                            <label class="label-summary">Date of Birth</label>
+                            <input type="date" id="dob" disabled />
+                            <label class="label-summary">Gender</label>
+                            <input type="text" value="Gender" disabled />
+                            <label class="label-summary">Nationality</label>
+                            <input type="text" value="Nationality" disabled />
+
+                            <br>
+                            <h5 class="fs-title-summary">Contact Information</h5>
+                            <hr>
+                            <label class="label-summary">Address Line 1</label>
+                            <input type="text" value="Address Line 1" disabled />
+                            <label class="label-summary">Address Line 2</label>
+                            <input type="text" value="Address Line 2" disabled />
+                            <label class="label-summary">State/ Unioun Teritory</label>
+                            <input type="text" value="State/ Unioun Teritory" disabled />
+                            <label class="label-summary">District</label>
+                            <input type="text" value="District" disabled />
+                            <label class="label-summary">City / Village / Town</label>
+                            <input type="text" value="City / Village / Town" disabled />
+                            <label class="label-summary">Alternate Contact Number</label>
+                            <input type="text" value="Alternate Contact Number" disabled />
+
+                            <br>
+                            <h5 class="fs-title-summary">SSC Information</h5>
+                            <hr>
+                            <label class="label-summary">Name of College</label>
+                            <input type="text" value="Name of College" disabled />
+                            <label class="label-summary">Board</label>
+                            <input type="text" value="Board" disabled />
+                            <label class="label-summary">Year of Passing</label>
+                            <input type="text" value="Year of Passing" disabled />
+                            <label class="label-summary">Percentage / CGPA </label>
+                            <input type="text" value="Percentage" disabled />
+
+                            <br>
+                            <h5 class="fs-title-summary">HSC Information</h5>
+                            <hr>
+                            <label class="label-summary">Name of College</label>
+                            <input type="text" value="Name of College" disabled />
+                            <label class="label-summary">Board</label>
+                            <input type="text" value="Board" disabled />
+                            <label class="label-summary">Specialization</label>
+                            <input type="text" value="Specialization" disabled />
+                            <label class="label-summary">Year of Passing</label>
+                            <input type="text" value="Year of Passing" disabled />
+                            <label class="label-summary">Percentage / CGPA </label>
+                            <input type="text" value="Percentage" disabled />
+
+                            <br>
+                            <h5 class="fs-title-summary">Diploma</h5>
+                            <hr>
+                            <label class="label-summary">Name of College</label>
+                            <input type="text" value="Name of College" disabled />
+                            <label class="label-summary">University</label>
+                            <input type="text" value="University" disabled />
+                            <label class="label-summary">Specialization</label>
+                            <input type="text" value="Specialization" disabled />
+                            <label class="label-summary">Year of Passing</label>
+                            <input type="text" value="Year of Passing" disabled />
+                            <label class="label-summary">Percentage / CGPA </label>
+                            <input type="text" value="Percentage" disabled />
+
+                            <br>
+                            <h5 class="fs-title-summary">Graduation</h5>
+                            <hr>
+                            <label class="label-summary">Name of College</label>
+                            <input type="text" value="Name of College" disabled />
+                            <label class="label-summary">University</label>
+                            <input type="text" value="University" disabled />
+                            <label class="label-summary">Degree</label>
+                            <input type="text" value="Degree" disabled />
+                            <label class="label-summary">Specialization</label>
+                            <input type="text" value="Specialization" disabled />
+                            <label class="label-summary">Year of Passing</label>
+                            <input type="text" value="Year of Passing" disabled />
+                            <label class="label-summary">Percentage / CGPA </label>
+                            <input type="text" value="Percentage" disabled />
+
+                            <br>
+                            <h5 class="fs-title-summary">Post Graduation</h5>
+                            <hr>
+                            <label class="label-summary">Name of College</label>
+                            <input type="text" value="Name of College" disabled />
+                            <label class="label-summary">University</label>
+                            <input type="text" value="University" disabled />
+                            <label class="label-summary">Degree</label>
+                            <input type="text" value="Degree" disabled />
+                            <label class="label-summary">Specialization</label>
+                            <input type="text" value="Specialization" disabled />
+                            <label class="label-summary">Year of Passing</label>
+                            <input type="text" value="Year of Passing" disabled />
+                            <label class="label-summary">Percentage / CGPA </label>
+                            <input type="text" value="Percentage" disabled />
+
+                            <br>
+                            <h5 class="fs-title-summary">Post Graduation Diploma</h5>
+                            <hr>
+                            <label class="label-summary">Name of College</label>
+                            <input type="text" value="Name of College" disabled />
+                            <label class="label-summary">University</label>
+                            <input type="text" value="University" disabled />
+                            <label class="label-summary">Specialization</label>
+                            <input type="text" value="Specialization" disabled />
+                            <label class="label-summary">Year of Passing</label>
+                            <input type="text" value="Year of Passing" disabled />
+                            <label class="label-summary">Percentage / CGPA </label>
+                            <input type="text" value="Percentage" disabled />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
 </body>
-
-
-<style>
-    .upload-resume {
-        padding: 10px !important;
-        background-color: lightgray;
-        width: 100% !important;
-        border: 1px solid #a9a9a9 !important;
-        border-radius: 3px !important;
-    }
-
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        height: 100%;
-    }
-
-    /*Background color*/
-    #grad1 {
-        background-color: : #9C27B0;
-        background-image: linear-gradient(120deg, #FF4081, #81D4FA);
-    }
-
-    /*form styles*/
-    #msform {
-        text-align: center;
-        position: relative;
-        margin-top: 20px;
-    }
-
-    #msform fieldset .form-card {
-        background: white;
-        border: 0 none;
-        border-radius: 0px;
-        padding: 20px 40px 30px 40px;
-        box-sizing: border-box;
-        width: 100%;
-        /*stacking fieldsets above each other*/
-        position: relative;
-    }
-
-    #msform fieldset {
-        background: white;
-        border: 0 none;
-        border-radius: 0.5rem;
-        box-sizing: border-box;
-        width: 100%;
-        margin: 0;
-        padding-bottom: 20px;
-
-        /*stacking fieldsets above each other*/
-        position: relative;
-    }
-
-    /*Hide all except first fieldset*/
-    #msform fieldset:not(:first-of-type) {
-        display: none;
-    }
-
-    #msform fieldset .form-card {
-        text-align: left;
-        color: #9E9E9E;
-    }
-
-    #msform input,
-    #msform textarea {
-        padding: 0px 8px 4px 8px;
-        border: 2px solid lightgray;
-        border-radius: 3px;
-        margin-bottom: 25px;
-        margin-top: 2px;
-        width: 100%;
-        background: #ebe9e9;
-        box-sizing: border-box;
-        font-family: montserrat;
-        font-weight: bold;
-        color: #2C3E50;
-        font-size: 16px;
-        letter-spacing: 1px;
-    }
-
-    #msform input:focus,
-    #msform textarea:focus {
-        -moz-box-shadow: none !important;
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        border: none;
-        font-weight: bold;
-        border-bottom: 2px solid #4a408a;
-        outline-width: 0;
-    }
-
-    /*Blue Buttons*/
-    #msform .action-button {
-        width: 100px;
-        background: #4a408a;
-        font-weight: bold;
-        color: white;
-        border: 0 none;
-        border-radius: 0px;
-        cursor: pointer;
-        padding: 10px 5px;
-        margin: 10px 5px;
-    }
-
-    #msform .action-button:hover,
-    #msform .action-button:focus {
-        box-shadow: 0 0 0 2px white, 0 0 0 3px #4a408a;
-    }
-
-    /*Previous Buttons*/
-    #msform .action-button-previous {
-        width: 100px;
-        background: #616161;
-        font-weight: bold;
-        color: white;
-        border: 0 none;
-        border-radius: 0px;
-        cursor: pointer;
-        padding: 10px 5px;
-        margin: 10px 5px;
-    }
-
-    #msform .action-button-previous:hover,
-    #msform .action-button-previous:focus {
-        box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
-    }
-
-    /*Dropdown List Exp Date*/
-    select.list-dt {
-        border: none;
-        outline: 0;
-        border-bottom: 1px solid #ccc;
-        padding: 2px 5px 3px 5px;
-        margin: 2px;
-    }
-
-    select.list-dt:focus {
-        border-bottom: 2px solid #4a408a;
-    }
-
-    /*The background card*/
-    .card {
-        z-index: 0;
-        border: none;
-        border-radius: 0.5rem;
-        position: relative;
-    }
-
-    /*FieldSet headings*/
-    .fs-title {
-        font-size: 25px;
-        color: #2C3E50;
-        margin-bottom: 10px;
-        font-weight: bold;
-        text-align: left;
-    }
-
-    /*progressbar*/
-    #progressbar {
-        margin-bottom: 30px;
-        overflow: hidden;
-        color: lightgrey;
-    }
-
-    #progressbar .active {
-        color: #000000;
-    }
-
-    #progressbar li {
-        list-style-type: none;
-        font-size: 12px;
-        width: 20%;
-        float: left;
-        position: relative;
-    }
-
-    /*Icons in the ProgressBar*/
-    #progressbar #personal:before {
-        font-family: FontAwesome;
-        content: "\f007";
-    }
-
-    #progressbar #contact:before {
-        font-family: FontAwesome;
-        content: "\f095";
-    }
-
-    #progressbar #education:before {
-        font-family: FontAwesome;
-        content: "\f19d";
-    }
-
-    #progressbar #additional:before {
-        font-family: FontAwesome;
-        content: "\f141";
-    }
-
-    #progressbar #resume:before {
-        font-family: FontAwesome;
-        content: "\f15c";
-    }
-
-    /*ProgressBar before any progress*/
-    #progressbar li:before {
-        width: 50px;
-        height: 50px;
-        line-height: 45px;
-        display: block;
-        font-size: 18px;
-        color: #ffffff;
-        background: lightgray;
-        border-radius: 50%;
-        margin: 0 auto 10px auto;
-        padding: 2px;
-    }
-
-    /*ProgressBar connectors*/
-    #progressbar li:after {
-        content: '';
-        width: 100%;
-        height: 2px;
-        background: lightgray;
-        position: absolute;
-        left: 0;
-        top: 25px;
-        z-index: -1;
-    }
-
-    /*Color number of the step and the connector before it*/
-    #progressbar li.active:before,
-    #progressbar li.active:after {
-        background: #4a408a;
-    }
-
-    /*Imaged Radio Buttons*/
-    .radio-group {
-        position: relative;
-        margin-bottom: 25px;
-    }
-
-    .radio {
-        display: inline-block;
-        width: 204;
-        height: 104;
-        border-radius: 0;
-        background: lightblue;
-        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
-        box-sizing: border-box;
-        cursor: pointer;
-        margin: 8px 2px;
-    }
-
-    .radio:hover {
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-    }
-
-    .radio.selected {
-        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
-    }
-
-    /*Fit image in bootstrap div*/
-    .fit-image {
-        width: 100%;
-        object-fit: cover;
-    }
-</style>
-
-<script>
-
-
-    $(document).ready(function () {
-        $("select-nationality").select2();
-        $("select-stateut").select2();
-        $("select-district").select2();
-
-        var formatDate = new Date();
-        formatDate.setFullYear(formatDate.getFullYear() - 18);
-        var maxDate = formatDate.toISOString().split('T')[0];
-        document.getElementById("dob").setAttribute('max', maxDate);
-        $('#other-nationality').hide();
-        $('#other-stateut').hide();
-        $('#other-district').hide();
-        $('#other-areaofinterest').hide();
-
-        $('select[name=nationality]').change(function () {
-            $('#other-nationality').hide();
-            $("select[name=nationality] option:selected").each(function () {
-                var value = $(this).val();
-                if (value == "Other") {
-                    $('#other-nationality').show();
-                } else {
-                    $('#other-nationality').hide();
-                }
-
-            });
-            $('#other-stateut').hide();
-        });
-        $('select[name=stateut]').change(function () {
-            $("select[name=stateut] option:selected").each(function () {
-                var value = $(this).val();
-                if (value == "Other") {
-                    $('#other-stateut').show();
-                } else {
-                    $('#other-stateut').hide();
-                }
-
-            });
-        });
-        $('select[name=district]').change(function () {
-            $("select[name=district] option:selected").each(function () {
-                var value = $(this).val();
-                if (value == "Other") {
-                    $('#other-district').show();
-                } else {
-                    $('#other-district').hide();
-                }
-
-            });
-        });
-        $('select[name=areaofinterest]').change(function () {
-            $("select[name=areaofinterest] option:selected").each(function () {
-                var value = $(this).val();
-                if (value == "Other") {
-                    $('#other-areaofinterest').show();
-                } else {
-                    $('#other-areaofinterest').hide();
-                }
-
-            });
-        });
-
-
-        var current_fs, next_fs, previous_fs; //fieldsets
-        var opacity;
-
-        $(".next").click(function () {
-
-            current_fs = $(this).parent();
-            next_fs = $(this).parent().next();
-
-            //Add Class Active
-            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-            //show the next fieldset
-            next_fs.show();
-            //hide the current fieldset with style
-            current_fs.animate({ opacity: 0 }, {
-                step: function (now) {
-                    // for making fielset appear animation
-                    opacity = 1 - now;
-
-                    current_fs.css({
-                        'display': 'none',
-                        'position': 'relative'
-                    });
-                    next_fs.css({ 'opacity': opacity });
-                },
-                duration: 600
-            });
-        });
-
-        $(".previous").click(function () {
-
-            current_fs = $(this).parent();
-            previous_fs = $(this).parent().prev();
-
-            //Remove class active
-            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-            //show the previous fieldset
-            previous_fs.show();
-
-            //hide the current fieldset with style
-            current_fs.animate({ opacity: 0 }, {
-                step: function (now) {
-                    // for making fielset appear animation
-                    opacity = 1 - now;
-
-                    current_fs.css({
-                        'display': 'none',
-                        'position': 'relative'
-                    });
-                    previous_fs.css({ 'opacity': opacity });
-                },
-                duration: 600
-            });
-        });
-
-        $('.radio-group .radio').click(function () {
-            $(this).parent().find('.radio').removeClass('selected');
-            $(this).addClass('selected');
-        });
-
-        $(".submit").click(function () {
-            return false;
-        })
-
-    });
-
-
-
-
-
-
-</script>
 
 </html>

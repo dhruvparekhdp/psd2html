@@ -10,73 +10,48 @@
 
   <!-- Bootstrap -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="vendor/font-awesome@6.1.1/all.min.css">
 
   <link rel="stylesheet" href="dexonlinestyles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-    crossorigin="anonymous"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-    crossorigin="anonymous"></script>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-        
-  
-      <![endif]-->
+  <link rel="stylesheet" href="vendor/bootstrap@5.1.3/bootstrap.min.css">
+  <script src="vendor/jquery/3.2.1/jquery.min.js"></script>
+  <script src="vendor/bootstrap@5.1.3/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <div class="row header">
-
-      <div class="col-lg-12 container-zero">
-        <nav class="navbar navbar-custom navbar-light navbar-expand-lg fixed-top">
-          <a class="navbar-brand" href="#"><img src="image/nse_dex.jpg" width="274" height="59" alt=""
-              style="margin-top: -15px; z-index: -100" /></a>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse justify-content-end navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-              <li clas="navbar-item">
-                <a href="#" class="nav-link">ABOUT US</a>
+    <nav class="navbar navbar-expand-lg navbar-light header">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="image/nse_dex.jpg" width="274" height="59" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+          <div class="d-flex">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
               </li>
-              <li clas="navbar-item">
-                <a href="#" class="nav-link">SERVICES</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">EDIT DETAILS</a>
               </li>
-              <li clas="navbar-item">
-                <a href="#" class="nav-link">HELPDESK</a>
-              </li>
-              <li clas="navbar-item">
-                <button type="button" class="btn custom-btn-warning">LOGIN</button>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LOGOUT</a>
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </div>
-    </div>
-    <div class="row content flex-center h-620">
-      <div class="col-lg-10 thankyou-content">
+    </nav>
+    <div class="row content-after-login flex-center content-thank-you">
+      <div class="col-10 thankyou-content">
         <h2>Welcome </h2>
-        <p>Thank you for Registering with us
+        <p class="l-h-2">Thank you for Registering with us
           <br>
           Please proceed to fill the form so that our team will be able to help you in best possible way
 
         <h3>Prerequisite</h2>
-          Please keep related document details ready for form fill up
-          <br>
+          <i>Please keep related document details ready for form fill up</i>
           <br>
           <ul>
             <li>SSC (10th or equivalent)</li>
@@ -92,21 +67,8 @@
           </p>
       </div>
     </div>
-    <div class="row footer">
-      <div class="col-lg-8 col-xs-6">
-        <h5 style="color:#6C6C6C;">© Copyright 2022 NSEIT Ltd. All Right Reserved</h5>
-      </div>
-    </div>
   </div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-    crossorigin="anonymous"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -50,41 +50,20 @@
       </div>
     </nav>
     
-    <div class="row content p-t-2-r">
+    <div class="row justify-content-center content p-t-2-r">
       <div class="col-lg-4 m-3">
         <form class="Squarewt">
           <div class="form-group">
-            <input type="text" class="custom-input-field" id="nameInput" placeholder="Enter Name">
-          </div>
-          <div class="form-group contact-number-container">
-            <input type="tel" name="usrtel" class="contact-number-input">
-            <a class="contact-number-button">Verify</a>
-          </div>
-          <div class="form-group otp-container">
-            <input class="otp-input" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1>
-            <input class="otp-input" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1>
-            <input class="otp-input" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1>
-            <input class="otp-input" type="text" oninput='digitValidate(this)' onkeyup='tabChange(4)' maxlength=1>
-            <span class="icon-container">
-              <i class="fa fa-undo"></i> &nbsp; Resend
-            </span>
-          </div>
-          <span class="form-help-text otp-attempt-text">
-            Attempt 2 of 3
-          </span>
-          <div class="form-group">
-            <input type="email" class="custom-input-field" id="exampleInputEmail1" placeholder="Email">
+            <input type="text" class="custom-login-field" id="usernameInput" placeholder="User Name">
+            <input type="password" class="custom-login-field" id="usernameInput" placeholder="Password">
             <span class="form-help-text">
-              Email ID will be verified
+              Forgot Password?
             </span>
+            <br>
+            <br>
           </div>
-          <button type="submit" style="width: 100%;" class="btn custom-btn-warning">REGISTER NOW</button>
+          <button type="submit" style="width: 100%;" class="btn custom-btn-warning">LOGIN</button>
         </form>
-      </div>
-      <div class="col-lg-7 poster">
-        <div class="title">Job Seeker Network</div>
-        <div class="title_text">Register to get updates on most exciting job roles based on your interest and Expertise
-          and Get Your dream Job Today</div>
       </div>
     </div>
     <div class="row helpdesk">
@@ -113,25 +92,6 @@
       </div>
     </div>
     
-
-
-
-  <script>
-    let digitValidate = function (ele) {
-      console.log(ele.value);
-      ele.value = ele.value.replace(/[^0-9]/g, '');
-    }
-
-    let tabChange = function (val) {
-      let ele = document.getElementsByClassName('otp-input');
-      if (ele[val - 1].value != '') {
-        ele[val].focus()
-      } else if (ele[val - 1].value == '') {
-        ele[val - 2].focus()
-      }
-    }
-
-  </script>
 </body>
 
 </html>
